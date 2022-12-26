@@ -16,12 +16,12 @@ body
 	border-radius: 0px;
 	background-color: #999999;
     border-top: 1px solid black;
+    border-bottom: 1px solid black;
 }
 
 .navbar-header
 {
     padding: 15px 0 15px 10px;
-    border-bottom: 1px solid black;
 }
 
 .navbar-brand
