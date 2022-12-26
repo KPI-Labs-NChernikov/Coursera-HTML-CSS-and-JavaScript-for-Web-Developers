@@ -1,0 +1,148 @@
+body
+{
+    margin: 0;
+	padding: 0;
+    font-family: "Comic Sans MS", "Comic Sans", cursive;
+    font-size: 12pt;
+}
+
+header
+{
+    margin-top: 4%;
+    text-align: center;
+}
+
+header h1
+{
+    font-size: 1.75rem;
+}
+
+.menu-items
+{
+    margin-top: 6%;
+}
+
+.menu-item
+{
+    box-sizing: border-box;
+    margin-left: calc((100% - 27% * 3) / 8);
+    margin-right: calc((100% - 27% * 3) / 8);
+    border: 1px solid black;
+    width: 27%;
+    float: left;
+    background-color: #999999;
+    font-size: 1em;
+}
+
+.menu-item:first-child:first-child
+{
+    margin-left: calc((100% - 27% * 3) / 8 * 2);
+}
+
+.menu-item:first-child:last-child
+{
+    margin-right: calc((100% - 27% * 3) / 8 * 2);
+}
+
+.meal-description>p
+{
+    font-size: 1rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.meal-description
+{
+    padding: 0 5% 5% 5%;
+    clear: both;
+}
+
+.meal-name
+{
+    box-sizing: border-box;
+    float: right;
+    padding: 1% 10% 1% 10%;
+    border-left: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.meal-name h2
+{
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.pink
+{
+    background-color: #d59898;
+}
+
+.red
+{
+    background-color: #c14543;
+}
+
+.red h2
+{
+    color: white;
+}
+
+.yellow
+{
+    background-color: #e5d198;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .menu-item:nth-child(1), .menu-item:nth-child(2) 
+    {
+      width: 45%;
+    }
+
+    .menu-item:nth-child(1) 
+    {
+        margin-right: calc((100% - 45% * 2) / 6) !important;
+        margin-left: calc((100% - 45% * 2) / 6 * 2) !important;
+    }
+
+    .menu-item:nth-child(2) 
+    {
+        margin-left: calc((100% - 45% * 2) / 6) !important;
+        margin-right: calc((100% - 45% * 2) / 6 * 2) !important;
+    }
+
+    .menu-item:nth-child(3)
+    {
+        width: calc(90% + ((100% - 90%) / 6 * 2)) !important;
+        margin-left: calc((100% - 90%) / 6 * 2) !important;
+        margin-right: calc((100% - 90%) / 6 * 2) !important;
+        margin-top: 3%;
+        clear: both;
+    }
+  }
+  
+@media (max-width: 767px) {
+    .menu-item
+    {
+        width: 80% !important;
+        margin-left: 10% !important;
+        margin-right: 10% !important;
+        margin-bottom: 3%;
+        clear: both;
+    }
+
+    .menu-item:last-child
+    {
+        margin-bottom: 0 !important;
+    }
+
+    header
+    {
+        margin-top: 6%;
+    }
+
+    .menu-items
+    {
+        margin-top: 4%;
+    }
+}
